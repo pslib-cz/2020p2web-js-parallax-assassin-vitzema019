@@ -25,5 +25,17 @@
         <p>Lorem ipsum</p>
         <p>Creating parallax effect</p>
     </section>
+    <script>
+        let layer = document.getElementsByClassName("parallax-layer");
+        window.onscroll = (e) =>{
+            layer[4].style.transform = "translateY(-" + scrollY +"px)"
+            layer[3].style.transform = "translateX(-" + scrollY +"px) translateY(-" + scrollY +"px)"
+            layer[2].style.transform = "translateY(-" + scrollY +"px)"
+            layer[1].style.transform = "translateY(-" + scrollY +"px)"
+            layer[0].style.transform = "translateY(-" + scrollY +"px)"
+        };
+        
+        console.log(layer);
+    </script>
 </body>
 </html>
